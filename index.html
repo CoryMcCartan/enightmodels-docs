@@ -37,7 +37,7 @@
 <li class="nav-item"><form class="form-inline" role="search">
  <input class="form-control" type="search" name="search-input" id="search-input" autocomplete="off" aria-label="Search site" placeholder="Search for" data-search-index="search.json">
 </form></li>
-<li class="nav-item"><a class="nav-link" href="https://github.com/CoryMcCartan/enightmodels/" aria-label="GitHub"><span class="fa fab fa-github fa-lg"></span></a></li>
+<li class="nav-item"><a class="external-link nav-link" href="https://github.com/CoryMcCartan/enightmodels/" aria-label="GitHub"><span class="fa fab fa-github fa-lg"></span></a></li>
       </ul>
 </div>
 
@@ -53,8 +53,7 @@
 <h2 id="basic-workflow">Basic Workflow<a class="anchor" aria-label="anchor" href="#basic-workflow"></a>
 </h2>
 <ol style="list-style-type: decimal">
-<li>Load raw data from S3 with <code><a href="reference/read_csv_bucket.html">read_csv_bucket()</a></code> and <code>spec_live()</code>
-</li>
+<li>Load raw data from S3 with <code><a href="reference/read_bucket.html">read_parquet_bucket()</a></code>, <code><a href="reference/read_bucket.html">read_csv_bucket()</a></code>, or <code><a href="reference/read_bucket.html">read_json_bucket()</a></code>.</li>
 <li>Format data so that it matches schema (below); test with <code><a href="reference/check_data.html">check_elec_data()</a></code>
 </li>
 <li>Join any covariates with <code><a href="reference/join_exact.html">join_exact()</a></code>
@@ -62,7 +61,7 @@
 <li>Fit pre-specified models for race outcomes, e.g., <code><a href="reference/model_legacy.html">model_legacy()</a></code>
 </li>
 <li>Optional: add calibrated prediction intervals with TODO</li>
-<li>Optional transform predictions into alternative formats (e.g. raw votes to two-party vote share margin)</li>
+<li>Optional: transform predictions into alternative formats with <code><a href="reference/pred_convert.html">pred_convert()</a></code> (e.g. raw votes to two-party vote share margin)</li>
 </ol>
 </div>
 <div class="section level2">
@@ -145,7 +144,7 @@
   </main><aside class="col-md-3"><div class="links">
 <h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
-<li><a href="https://github.com/CoryMcCartan/enightmodels/">Browse source code</a></li>
+<li><a href="https://github.com/CoryMcCartan/enightmodels/" class="external-link">Browse source code</a></li>
 </ul>
 </div>
 
