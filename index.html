@@ -91,7 +91,7 @@
 <li>
 <code>time</code>, a timestamp for the data record.</li>
 <li>
-<code>stage</code>, the type of data. Recommended format: <code>"final"</code>, <code>"partial"</code>, <code>"not reported"</code>, <code>"expected"</code>, or <code>"test"</code>. Integer editorial stage also acceptable.</li>
+<code>stage</code>, the type of data. Recommended format is integer editorial stage: 0 for no vote, 2 for some vote, 4 for an end-of-night count, 6 for a final count pending provisional ballots, and 10 for a certified count. Alternatively, use <code>"final"</code>, <code>"partial"</code>, <code>"not reported"</code>, etc.</li>
 <li>
 <code>method</code>, the vote method reported. One of <code>"eday"</code>, “<code>early</code>”, <code>"mail"</code>, “<code>abs</code>”, “<code>adv</code>” (for combo of early, mail, or absentee), <code>"prov"</code>, or <code>"all"</code>. The <code>VOTE_METHODS</code> constant in the package can be used to map these abbreviations to full names.</li>
 <li>
@@ -141,14 +141,7 @@
 <span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a>AWS_SECRET_ACCESS_KEY <span class="ot">=</span> <span class="st">"..."</span></span></code></pre></div>
 </div>
 </div>
-  </main><aside class="col-md-3"><div class="links">
-<h2 data-toc-skip>Links</h2>
-<ul class="list-unstyled">
-<li><a href="https://github.com/CoryMcCartan/enightmodels/" class="external-link">Browse source code</a></li>
-</ul>
-</div>
-
-<div class="license">
+  </main><aside class="col-md-3"><div class="license">
 <h2 data-toc-skip>License</h2>
 <ul class="list-unstyled">
 <li>All Rights Reserved</li>

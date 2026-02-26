@@ -47,7 +47,7 @@ share formats may lose information.</p>
 
     <div class="section level2">
     <h2 id="ref-usage">Usage<a class="anchor" aria-label="anchor" href="#ref-usage"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">pred_convert</span><span class="op">(</span><span class="va">d_pred</span>, to <span class="op">=</span> <span class="va">PRED_TYPES</span><span class="op">)</span></span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">pred_convert</span><span class="op">(</span><span class="va">d_pred</span>, to <span class="op">=</span> <span class="va">PRED_TYPES</span>, others <span class="op">=</span> <span class="cn">NULL</span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div class="section level2">
@@ -61,6 +61,11 @@ share formats may lose information.</p>
 <dt id="arg-to">to<a class="anchor" aria-label="anchor" href="#arg-to"></a></dt>
 <dd><p>Target prediction type. One of <code>PRED_TYPES</code>: <code>"vote"</code>, <code>"margin_vote"</code>,
 <code>"share"</code>, <code>"margin_share"</code>.</p></dd>
+
+
+<dt id="arg-others">others<a class="anchor" aria-label="anchor" href="#arg-others"></a></dt>
+<dd><p><code>&lt;tidy-select&gt;</code> Selection of other columns to transform along
+with <code>rep</code> and <code>pred</code>.</p></dd>
 
 </dl></div>
     <div class="section level2">

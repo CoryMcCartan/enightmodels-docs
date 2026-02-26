@@ -40,7 +40,9 @@
     <h2 id="ref-usage">Usage<a class="anchor" aria-label="anchor" href="#ref-usage"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">remove_file_bucket</span><span class="op">(</span><span class="va">path</span>, bucket <span class="op">=</span> <span class="va">BUCKET</span><span class="op">)</span></span>
 <span></span>
-<span><span class="fu">move_file_bucket</span><span class="op">(</span><span class="va">from</span>, <span class="va">to</span>, bucket <span class="op">=</span> <span class="va">BUCKET</span><span class="op">)</span></span></code></pre></div>
+<span><span class="fu">move_file_bucket</span><span class="op">(</span><span class="va">from</span>, <span class="va">to</span>, bucket <span class="op">=</span> <span class="va">BUCKET</span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu">list_bucket</span><span class="op">(</span>prefix <span class="op">=</span> <span class="cn">NULL</span>, bucket <span class="op">=</span> <span class="va">BUCKET</span>, max <span class="op">=</span> <span class="fl">1000</span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div class="section level2">
@@ -54,6 +56,14 @@
 <dt id="arg-bucket">bucket<a class="anchor" aria-label="anchor" href="#arg-bucket"></a></dt>
 <dd><p>The name of the S3 bucket.</p></dd>
 
+
+<dt id="arg-prefix">prefix<a class="anchor" aria-label="anchor" href="#arg-prefix"></a></dt>
+<dd><p>A prefix to filter the files in the bucket.</p></dd>
+
+
+<dt id="arg-max">max<a class="anchor" aria-label="anchor" href="#arg-max"></a></dt>
+<dd><p>The maximum number of files to list.</p></dd>
+
 </dl></div>
     <div class="section level2">
     <h2 id="value">Value<a class="anchor" aria-label="anchor" href="#value"></a></h2>
@@ -64,6 +74,7 @@
 
 <ul><li><p><code>remove_file_bucket()</code>: Remove a file from an S3 bucket</p></li>
 <li><p><code>move_file_bucket()</code>: Move a file within an S3 bucket</p></li>
+<li><p><code>list_bucket()</code>: List files within an S3 bucket</p></li>
 </ul></div>
 
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>

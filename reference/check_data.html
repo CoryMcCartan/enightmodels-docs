@@ -90,7 +90,7 @@ The smallest unit of election data, which corresponds to a dataframe row in the 
 <li><p><code>party</code>, a lowercase character identifier for the party of the candidate. One of <code>"dem"</code> or <code>"rep"</code> or <code>"ind"</code> or <code>"oth"</code>.
 The <code>PARTIES</code> constant in the package can be used to map these abbreviations to full party names.</p></li>
 <li><p><code>time</code>, a timestamp for the data record.</p></li>
-<li><p><code>stage</code>, the type of data. Recommended format: <code>"final"</code>, <code>"partial"</code>, <code>"not reported"</code>, <code>"expected"</code>, or <code>"test"</code>. Integer editorial stage also acceptable.</p></li>
+<li><p><code>stage</code>, the type of data. Recommended format is integer editorial stage: 0 for no vote, 2 for some vote, 4 for an end-of-night count, 6 for a final count pending provisional ballots, and 10 for a certified count. Alternatively, use <code>"final"</code>, <code>"partial"</code>, <code>"not reported"</code>, etc.</p></li>
 <li><p><code>method</code>, the vote method reported. One of <code>"eday"</code>, "<code>early</code>", <code>"mail"</code>, "<code>abs</code>", "<code>adv</code>" (for combo of early, mail, or absentee), <code>"prov"</code>, or <code>"all"</code>.
 The <code>VOTE_METHODS</code> constant in the package can be used to map these abbreviations to full names.</p></li>
 <li><p><code>geo</code>, a unique geographic character identifier. Recommended: FIPS code for counties, GEOID or similar for precincts, <code>"all"</code> for race-wide data.</p></li>
